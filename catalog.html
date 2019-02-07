@@ -62,37 +62,60 @@
         <h3 class="filter">Фильтр:</h3>
         <form class="items-filter" action="https://echo.htmlacademy.ru" method="get">
               
-        <h4>Цена:</h4>
+        <fieldset>
+            <legend>Цена:</legend>
         <input type="range" min="0" max="35000" step="1" class="price-range"><br>
         <input type="text" class="price-min" name="price-min" placeholder="0"> — 
         <input type="text" class="price-max" name="price-max" placeholder="30000">
-        <h4>Производители:</h4>
+            </fieldset>
+         <fieldset>
+        <legend>Производители:</legend>
+            <ul class="brands">
+            <li>
         <label>
         <input type="checkbox" id="brands" name="brands" checked>
         Bosch
-        </label><br>
+        </label>
+            </li>
+            <li>
         <label>
         <input type="checkbox" id="brands" name="brands">
         Интерскол
-        </label><br>
+        </label>
+            </li>
+            <li>
         <label>
         <input type="checkbox" id="brands" name="brands" checked>
         Makita
-        </label><br>
+        </label>
+            </li>
+            <li>
         <label>
         <input type="checkbox" id="brands" name="brands">
         Dewalt
-        </label><br>
+        </label>
+            </li>
+            <li>
         <label>
         <input type="checkbox" id="brands" name="brands">
         Hitachi
-        </label><br>
-            
-        <h4>Питание:</h4>
+        </label>
+            </li>
+            </ul>
+            </fieldset>
+        <fieldset>
+            <legend>Питание:</legend>
+            <ul class="power">
+            <li>
         <label><input type="radio" class="power-radio" name="power" value="battery">Аккумуляторные</label>
+            </li>
+            <li>
         <label><input type="radio" class="power-radio" name="power" value="electricity"> Сетевые</label>
-            
+            </li>
+            </ul>
+            </fieldset>
         <button class="filter-button" type="submit">Показать</button>
+            
               </form>
           </section>
          
@@ -308,7 +331,7 @@
             <li class="continue-shopping"><a href="catalog.html">Продолжить покупки</a> </li>
           </ul>
         
-      <span class="modal-close">x</span>
+      <span class="modal-close">Закрыть</span>
     </section>
       
   </body>
