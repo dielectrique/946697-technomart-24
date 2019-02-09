@@ -3,22 +3,26 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
       <header class="main-header">
+          <a class="main-logo" href="index.html">
+          <div class="header-logo-background">
+          <img src="img/logo-technomart.svg" width="137" height="22" alt="Логотип магазина «Техномарт»">
+        </div></a>
           
-          <a class="main-logo">
-          <img src="img/logo-technomart.svg" width="137" height="22" alt="Логотип магазина «Техномарт»"></a>
           <div class="header-top">
           
               <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-              <label>Поиск: <input type="text" id="search" name="search">
-                </label>
+              <input type="text" name="search" value="Поиск:">               
               </form>
               
-            <a class="bookmarks" href="bookmarks.html">Закладки: 0</a>
-            <a class="cart" href="cart.html">Корзина: 0</a>
-            <a class="checkout" href="checkout.html">Оформить заказ</a>
+            <div class="bookmarks"> <a href="bookmarks.html">Закладки: 0</a></div>
+            <div class="cart"><a href="cart.html">Корзина: 0</a></div>
+            <div class="checkout"><a href="checkout.html">Оформить заказ</a></div>
             </div>
           <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
             <a class="header-phone" href="tel:+78125550555">
@@ -47,7 +51,7 @@
           
         <!-- Блок на потом-->
           
-          <article>
+          <article class="about-us">
           <h2>КОМПАНИЯ «Техномарт»</h2>
         <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
         <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
@@ -70,9 +74,9 @@
       </main>
       
     <footer class="main-footer">
-    <div class="footer-top-right">
-              <a class="main-logo">
-           <img src="img/logo-technomart.svg" width="137" height="22" alt="Логотип магазина «Техномарт»"></a>
+    <div class="footer-top">
+              <a class="main-logo"><div class="footer-logo-background">
+                  <img src="img/logo-technomart.svg" width="137" height="22" alt="Логотип магазина «Техномарт»"></div></a>
         <p class="footer-contacts">
         г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
             +7 (812) 555-05-55
@@ -84,7 +88,7 @@
                 <li><a class="nav-white" href="catalog.html">Каталог</a></li>
                 <li><a class="nav-white" href="delivery.html">Доставка</a></li>
                 <li><a class="nav-white" href="contacts.html">Контакты</a></li>
-                <li><a class="nav-yellow" href="materials.html">Матриалы</a></li>
+                <li><a class="nav-yellow" href="materials.html">Материалы</a></li>
                 <li><a class="nav-yellow" href="technics.html">Техника</a></li>
                 <li><a class="nav-yellow" href="tools.html">Инструмент</a></li>
                 <li><a class="nav-yellow" href="special.html">Спецпредложения</a></li>  
@@ -97,18 +101,18 @@
             Все права защищены</p>
         <div class="footer-social">
         <ul>
-          <li><a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
-          <li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
-          <li><a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
+          <li><a href="#"><span class="social-vk" class="visually-hidden">Вконтакте</span></a></li>
+          <li><a href="#"><span class="social-fb" class="visually-hidden">Фейсбук</span></a></li>
+          <li><a href="#"><span class="social-inst" class="visually-hidden">Инстаграм</span></a></li>
         </ul>
       </div>
       <p class="footer-mailto">
         <b>Обратная связь:</b> 
         <a class="mailto" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </p>
-        <p class="footer-copyright">
+        <p class="footer-developed">
         <b>Разработано —</b>
-        <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+        <a class="academy-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
       </p>
         </div>
       </footer>

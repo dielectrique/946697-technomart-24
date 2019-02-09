@@ -1,0 +1,474 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Cuprum", "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-header {
+    background-color: #f4f7f9;
+}
+
+.header-top {    
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff;
+    
+  background-color: #4e5c73;
+  border: none;
+}
+
+.header-top a {
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff;
+}
+
+.header-logo-background {
+    width: 220px;
+    height: 42px;
+    background-color: #ee3643;
+    border: none;
+    vertical-align: middle;
+}
+
+.logo-background:hover,
+.logo-background:active {
+    background-color: #ba2732;
+}
+
+.logo-background:focus {
+    background-color: #ee3643;
+}
+
+.search-form input[type=text] {
+    font-size: 17px;
+    color: #ffffff;
+    background-color: #4e5c73;
+    border: none;
+}
+
+/*Не понимаю, почему не вставляются иконки! :(( Что я делаю не так?*/
+.bookmarks {
+    background-image: url("img/icon-bookmark.svg");
+}
+
+.bookmarks:hover,
+.cart:hover,
+.search-form input[type=text]:hover {
+    background-color: #212a3a;    
+}
+
+.checkout:hover {
+    background-color: #5fbb2d;
+}
+
+.bookmarks:active,
+.cart:active {
+    background-color: #161d29;
+}
+
+.checkout:active {
+    color: #ffffff;
+    opacity: 0.5;
+    background-color: #518534;
+}
+
+.search-form input[type=text]:focus {
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: normal;
+}
+
+.main-header h1 {
+    font-size: 16px;
+    line-height: 23px;
+    color: #ee3643;
+    font-style: italic;
+}
+
+.header-phone {
+    font-size: 21px;
+    line-height: 21px;
+    color: #ee3643;
+    border: 3px solid #ffffff;
+}
+
+.header-adress {
+    font-size: 14px;
+    line-height: 24px;
+    color: #32425c;
+}
+
+.header-login {
+    list-style: none;
+}
+
+.header-login a,
+.authorised a {
+    font-size: 21px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.header-login a:hover {
+    color: #ee3643;
+}
+
+.header-login a:active,
+.authorised a:active {
+    color: #000000;
+    opacity: 0.3;
+}
+
+.personal-data {
+    list-style: none;
+}
+
+.personal-data a {
+    font-size: 16px;
+    line-height: 18px;
+    color: #32425c;
+    text-decoration: underline;
+    font-weight: normal;
+}
+
+.personal-data a:hover {
+    color: #ee3643;
+}
+
+.personal-data a:active {
+    color: #000000;
+    opacity: 0.3;
+}
+
+.main-nav {
+    background-color: #32425c;
+    border: none;
+}
+
+.site-navigation {
+    list-style: none;
+}
+
+.main-nav a {
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff;
+}
+
+.main-nav a:hover {
+    background-color: #293449;
+}
+
+.main-nav a:active {
+    background-color: #293449;
+    color: #ffffff;
+    opacity: 0.5;
+}
+
+.about-us {
+    font-size: 13px;
+    line-height: 24px;
+    color: #000000;
+    background-color: #ffffff;    
+}
+
+.about-us h2 {
+    font-size: 30px;
+    line-height: 30px;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.transport-list {
+    font-size: 18px;
+    line-height: 20px;
+    list-style: none;
+}
+
+.button {
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color: #ee3643;
+    border: none;
+}
+
+.main-contacts h2 {
+    font-size: 30px;
+    line-height: 30px;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.breadcrumbs {
+    list-style: none;
+}
+
+.breadcrumbs a {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.catalog-headline {
+    background-color: #f2f6f8;
+}
+
+.catalog-headline h2 {
+    font-size: 30px;
+    line-height: 30px;
+    color: #32425c;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.filters {
+    background-color: #ffffff;
+}
+
+.filters h3 {
+   font-family: 'PT Sans', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 18px;
+    color: #000000; 
+    background-color: #f7f3ec;
+}
+
+.price {
+   background-color: #f7f3ec;
+    border: none;
+}
+
+.price legend,
+.brands legend,
+.power legend {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 17px;
+    line-height: 30px;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.brands,
+.power {
+    border: none;
+    
+    font-family: 'PT Sans', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000000; 
+    background-color: #ffffff;
+}
+
+.brands ul,
+.power ul {
+    list-style: none;
+}
+
+.filter-button {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 18px;
+    color: #000000; 
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+}
+
+.sort {
+    background-color: #f7f3ec; 
+}
+
+.sort h3 {
+   font-family: 'PT Sans', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.item-sort {
+    list-style: none;
+}
+
+.item-sort a {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 18px;
+    color: #000000;
+    opacity: 0.3;
+    text-decoration-line: underline;
+    text-decoration-style:dashed;
+    text-decoration-color: #ee3643;
+}
+
+.item-sort a:hover {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 18px;
+    color: #000000;
+    opacity: 1;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: #ee3643;
+}
+
+.item-sort a:active {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 18px;
+    color: #ee3643;
+    opacity: 1;
+    text-decoration: none;
+}
+
+.item-sort-order {
+    list-style: none;
+}
+
+.catalog {
+    background-color: #ffffff;    
+}
+
+.catalog-list {
+    list-style: none;
+}
+
+.catalog-item a {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.old-price {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 18px;
+    color: #999999;
+    text-decoration: line-through;
+}
+
+.new-price {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 18px;
+    color: #ffffff;
+    background-color: #ee3643;
+}
+
+.footer-top {
+    background-color: #32425c;
+}
+
+.footer-logo-background {
+    width: 220px;
+    height: 63px;
+    background-color: #ee3643;
+    border: none;
+    vertical-align: middle;
+}
+
+.footer-contacts {
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;    
+    font-weight: normal;
+}
+
+.site-navigation {
+    list-style: none;
+}
+
+.site-navigation a {
+    font-size: 18px;
+    line-height: 24px;    
+    font-weight: normal;
+    color: #ffffff;
+}
+
+a.nav-yellow {
+    color: #ffd180;
+}
+
+.footer-bottom {
+    background-color: #293449;
+}
+
+.footer-copyright,
+.footer-mailto,
+.footer-developed {
+    font-size: 16px;
+    line-height: 18px;    
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.footer-social ul {
+    list-style: none;
+}
+
+.mailto,
+.academy-link {
+    font-size: 16px;
+    line-height: 18px;    
+    font-weight: normal;
+    color: #ffd180;
+}
+
+
+
+.modal-login {
+    display: none;
+}
+
+.modal-addon {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+/*
+.visually-hidden {
+    display: none;
+}
+*/
