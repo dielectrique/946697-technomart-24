@@ -43,8 +43,6 @@ a {
     padding: 12px 55px;
 }
 
-}
-
 .header-logo-background:hover,
 .header-logo-background:active {
     background-color: #ba2732;
@@ -128,6 +126,7 @@ a {
     line-height: 23px;
     color: #ee3643;
     font-style: italic;
+    font-weight: 400;
 }
 
 .header-phone {
@@ -561,7 +560,7 @@ a {
 .academy-link {
     font-size: 16px;
     line-height: 18px;    
-    font-weight: normal;
+    font-weight: 400;
     color: #ffd180;
 }
 
