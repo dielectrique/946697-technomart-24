@@ -15,7 +15,8 @@
                 <img src="img/logo-technomart.svg" width="110" height="17" alt="Логотип магазина «Техномарт»" class="header-logo">
             </a>
             <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-              <input type="text" name="search" value="Поиск:">               
+              <input type="text" name="search" value="Поиск:"> 
+                <button type="submit" class="search-button"><span class="visually-hidden">Найти</span></button>
               </form>
               
             <a class="bookmarks" href="bookmarks.html">Закладки: 0</a>
@@ -125,7 +126,7 @@
         </p>
         <p class="footer-developed">
         Разработано —
-        <a class="academy-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+        <a class="academy-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </p>
         </div>
     </div>
@@ -140,15 +141,13 @@
           <input type="text" name="username" placeholder="Имя Фамилия">
         </label></div>
       <div class="form-item email"><label>Ваш e-mail
-            <input type="text" name="email" placeholder="email@example.com">
+            <input type="email" name="email" placeholder="email@example.com">
        </label></div>
      <div class="form-item letter"><label>Текст письма
         <textarea name="letter-text" rows="7" placeholder="В свободной форме"></textarea>          
     </label></div>
-    <div class="modal-feedback-bottom">
-      <button class="feedback-form-button button" type="submit">Отправить</button></div>
+      <button class="feedback-form-button button" type="submit">Отправить</button>
         </form>
-    
       <button type="button" class="modal-close"><span class="visually-hidden">Закрыть</span></button>
         </div>
     </section>
