@@ -71,52 +71,70 @@
         </ul>
     
     
-          <h2 class="page-title">Перфораторы</h2>
+          <h2 class="inner-page-title">Перфораторы</h2>
         
             
-        <div class="catalog-columns">
-        <section class="filters">
+        
+       <div class="filter-sort-top">
         <h3>Фильтр:</h3>
-        <form class="items-filter" action="https://echo.htmlacademy.ru" method="get">
-              
-<!--
+        
+            
+         <div class="sort">
+          <h3>Сортировка:</h3>
+              <ul class="item-sort">
+                  <li><a class="current" href="#">По цене</a></li>
+                  <li><a href="#">По типу</a></li>
+                  <li><a href="#">По функционалу</a></li>
+              </ul>
+              <ul class="item-sort-order">
+                  <li><a class="ascending current" href="#"><span class="visually-hidden">По возрастанию</span></a></li>
+                  <li><a class="descending" href="#"><span class="visually-hidden">По убыванию</span></a></li>
+              </ul>
+             </div>
+          </div>
+        <div class="catalog-columns">
+       <form class="items-filter" action="https://echo.htmlacademy.ru" method="get">       
         <fieldset class="price">
             <legend>Цена:</legend>
         <input type="range" min="0" max="35000" step="1" class="price-range"><br>
-        <input type="text" class="price-min" name="price-min" placeholder="0"> — 
-        <input type="text" class="price-max" name="price-max" placeholder="30000">
+        <input type="text" class="price-min" name="price-min" placeholder="0">
+            <input type="text" class="price-max" name="price-max" placeholder="30000">
             </fieldset>
--->
          <fieldset class="brands">
         <legend>Производители:</legend>
             <ul class="brands-list">
             <li>
         <label>
-        <input type="checkbox" name="bosch" checked>
+        <input type="checkbox" name="bosch" class="visually-hidden" checked>
+            <span class="checkbox-indicator checked"></span>
         Bosch
         </label>
             </li>
             <li>
         <label>
-        <input type="checkbox" name="interskol">
+        <input type="checkbox" name="interskol" class="visually-hidden">
+            <span class="checkbox-indicator"></span>
         Интерскол
         </label>
             </li>
             <li>
         <label>
-        <input type="checkbox" name="makita" checked>
+        <input type="checkbox" name="makita" class="visually-hidden" checked>
+            <span class="checkbox-indicator checked"></span>
         Makita
         </label>
             </li>
             <li>
         <label>
-        <input type="checkbox" name="dewalt">
+        <input type="checkbox" name="dewalt" class="visually-hidden">
+            <span class="checkbox-indicator"></span>
         Dewalt
         </label>
             </li>
             <li>
         <label>
-        <input type="checkbox" name="hitachi">
+        <input type="checkbox" name="hitachi" class="visually-hidden">
+            <span class="checkbox-indicator"></span>
         Hitachi
         </label>
             </li>
@@ -126,32 +144,22 @@
             <legend>Питание:</legend>
             <ul class="power-type">
             <li>
-        <label><input type="radio" class="power-radio" name="power" value="battery">Аккумуляторные</label>
+        <label>
+            <input type="radio" class="power-radio" name="power" value="battery" class="visually-hidden">
+            <span class="radio-indicator"></span>
+            Аккумуляторные</label>
             </li>
             <li>
-        <label><input type="radio" class="power-radio" name="power" value="electricity">Сетевые</label>
+        <label>
+            <input type="radio" class="power-radio" name="power" value="electricity" class="visually-hidden">
+            <span class="radio-indicator"></span>Сетевые</label>
             </li>
             </ul>
             </fieldset>
         <button class="filter-button" type="submit">Показать</button>
             
               </form>
-          </section>
          
-<!--
-          <div class="sort">
-          <h3>Сортировка:</h3>
-              <ul class="item-sort">
-                  <li><a href="#">По цене</a></li>
-                  <li><a href="#">По типу</a></li>
-                  <li><a href="#">По функционалу</a></li>
-              </ul>
-              <ul class="item-sort-order">
-                  <li><a href="#"><span class="visually-hidden">От меньшей к большей</span></a></li>
-                  <li><a href="#"><span class="visually-hidden">От большей к меньшей</span></a></li>
-              </ul>
-          </div>
--->
           
           <section class="catalog">
         <h3 class="visually-hidden">Перфораторы BOSCH, Makita</h3>
