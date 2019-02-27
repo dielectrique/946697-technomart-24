@@ -71,7 +71,9 @@ img {
 .header-top {
     display: flex;
     flex-wrap: wrap;
-    align-items: stretch;    
+    align-items: stretch; 
+    
+    min-width: 940px;
 }
 
 .header-top a {
