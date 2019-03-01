@@ -1,4 +1,49 @@
- *, *::before, *::after {
+ @font-face { 
+font-family: 'Cuprum'; 
+src: url('../fonts/cuprum.woff2') format('woff2'), 
+url('../fonts/cuprum.woff') format('woff'); 
+font-weight: 400; 
+font-style: normal; 
+font-display: swap; 
+} 
+
+@font-face { 
+font-family: 'Cuprum'; 
+src: url('../fonts/cuprumitalic.woff2') format('woff2'), 
+url('../fonts/cuprumitalic.woff') format('woff'); 
+font-weight: 400; 
+font-style: italic; 
+font-display: swap; 
+} 
+
+@font-face { 
+font-family: 'Cuprum'; 
+src: url('../fonts/cuprumbold.woff2') format('woff2'), 
+url('../fonts/cuprumbold.woff') format('woff'); 
+font-weight: 700; 
+font-style: normal; 
+font-display: swap; 
+} 
+
+@font-face { 
+font-family: 'PT Sans'; 
+src: url('../fonts/ptsans.woff2') format('woff2'), 
+url('../fonts/ptsans.woff') format('woff'); 
+font-weight: 400; 
+font-style: normal; 
+font-display: swap; 
+} 
+
+@font-face { 
+font-family: 'PT Sans'; 
+src: url('../fonts/ptsansbold.woff2') format('woff2'), 
+url('../fonts/ptsansbold.woff') format('woff'); 
+font-weight: 700; 
+font-style: normal; 
+font-display: swap; 
+}
+
+*, *::before, *::after {
     box-sizing: inherit;
   }
 
@@ -12,7 +57,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: 'Cuprum', Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
@@ -261,12 +306,15 @@ img {
     display: flex;
     flex-wrap: nowrap;
     
+    width: 940px;
+    
     margin-bottom: 39px;
 }
 
 .header-center h1 {
     display: inline-block;
     
+    width: 300px;
     min-width: 300px;
     padding-left: 53px;
     padding-right: 50px;
@@ -286,7 +334,9 @@ img {
     flex-wrap: wrap;
     align-content: flex-start;
     
-    margin: 0; 
+    width: 270px;
+    
+    margin: 0;
 }
 
 .header-phone {
@@ -331,7 +381,10 @@ img {
     display: flex;
     
     margin: 0;
+    margin-left: 70px;
     padding: 0;
+    
+    width: 280px;
     
     list-style: none;
 }
@@ -378,7 +431,9 @@ img {
 
 .user-dashboard {
     width: 300px;
+    
     padding: 0;
+    margin-left: 50px;
 }
 
 .authorised {
@@ -389,6 +444,7 @@ img {
     width: 300px;
     padding: 11px;
     padding-left: 48px;
+    
     background-color: #ffffff;
     
 }
@@ -709,6 +765,7 @@ img {
     margin: 0;
     list-style: none;
     
+    transition-property: transform;
     transition-duration: 1s;
     transition-timing-function: ease;
 }
@@ -1012,11 +1069,11 @@ img {
 }
 
 .service-2 {
-    background: url("../img/service-bg-2.png") no-repeat 240px 0;
+    background: url("../img/service-bg-2.png") no-repeat 230px 0;
 }
 
 .service-3 {
-    background: url("../img/service-bg-3.png") no-repeat 166px 0;
+    background: url("../img/service-bg-3.png") no-repeat 140px 0;
 }
 
 .services-slider {
@@ -1401,9 +1458,6 @@ img {
 }
 
 .price {
-    display: flex;
-    justify-content: space-between;
-    
     width: 220px;
     
     padding: 0;
@@ -2163,7 +2217,7 @@ img {
 }
 
 .footer-copyright {
-    width: 230px;
+    width: 231px;
     padding: 0;
     margin: 0;
 }
@@ -2284,7 +2338,6 @@ img {
     color: #ee3643;
 }
 
-.modal-map,
 .modal-feedback {
     display: flex;
     justify-content: center;
@@ -2406,23 +2459,33 @@ img {
     background: url("../img/icon-close.svg") no-repeat 0 0;
 }
 
-/*
-.modal-feedback .modal-close {
-    position: absolute;
+.modal-map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    
+    width: 100%;
+    height: 100%;
+}
+
+.modal-map-window {
+    position: relative;
+    
+    width: 940px;
+    
+    background-color: #ffffff;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.modal-map .modal-close {
     top: 10px;
     right: 10px;
-  
-    width: 23px;
-    height: 23px;
-    
-    text-indent: -1000px;
-    z-index: 20;
-    
-    border: none;
-
-    background: url("../img/icon-close.svg") no-repeat 0 0;
 }
-*/
 
 .modal-addon {
     display: flex;
@@ -2436,8 +2499,6 @@ img {
     
     width: 100%;
     height: 100%;
-    
-   
 }
 
 .modal-addon-window {
@@ -2514,13 +2575,21 @@ img {
     right: 8px;
 }
 
-/*
-.modal-feedback,
-.modal-addon,
+.modal-feedback {
+    display: none;
+}
+
+.modal-addon {
+    display: none;
+}
+
 .modal-map {
     display: none;
 }
-*/
+
+.modal-show {
+    display: flex;
+}
 
 .hidden {
     display: none;
